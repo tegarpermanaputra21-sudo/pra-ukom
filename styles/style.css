@@ -166,7 +166,7 @@ nav .middle-side-nav a {
 
 #card-wrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   height: 380px;
   border-bottom: 1px solid var(--primary-color);
 }
