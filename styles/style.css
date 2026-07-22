@@ -167,7 +167,7 @@ nav .middle-side-nav a {
 #card-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  height: 380px;
+  height: auto;
   border-bottom: 1px solid var(--primary-color);
 }
 #card-wrapper .card {
@@ -196,7 +196,8 @@ nav .middle-side-nav a {
   justify-content: center;
 }
 #card-wrapper .card .card-image img {
-  max-width: 220px;
+  max-width: 80%;
+  width: 100%;
   height: auto;
   object-fit: cover;
 }
