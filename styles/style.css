@@ -195,8 +195,20 @@ nav .middle-side-nav a {
   margin: 60px 0;
   padding: 20px;
 }
+#rencent-reviews h2 {
+  margin-bottom: 60px;
+  font-weight: 600;
+}
 #rencent-reviews .riviews-wrapper {
   display: flex;
+  gap: 10px;
+}
+#rencent-reviews .riviews-wrapper .review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 20px;
+  border: 1px solid var(--primary-color);
 }
 
 footer {
