@@ -196,7 +196,7 @@ nav .middle-side-nav a {
   padding: 20px;
 }
 #rencent-reviews h2 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-weight: 600;
 }
 #rencent-reviews .riviews-wrapper {
@@ -209,6 +209,9 @@ nav .middle-side-nav a {
   gap: 10px;
   padding: 40px 20px;
   border: 1px solid var(--primary-color);
+}
+#rencent-reviews .riviews-wrapper .review .desc-comment {
+  margin-bottom: 10px;
 }
 
 footer {
@@ -322,15 +325,12 @@ footer .bottom-footer .copyright p {
     font-size: 26px;
   }
 
-  #hero,
-  #content-cta {
+  #hero {
     flex-direction: column;
     height: auto;
   }
   #hero .left-side-hero,
-  #hero .right-side-hero,
-  #content-cta .left-side-content-cta,
-  #content-cta .right-side-content-cta {
+  #hero .right-side-hero {
     width: 100%;
     border-right: none;
   }
@@ -349,18 +349,9 @@ footer .bottom-footer .copyright p {
   #hero .left-side-hero .bottom-desc h1 {
     font-size: 32px;
   }
-  #hero .right-side-hero,
-  #content-cta .left-side-content-cta {
+  #hero .right-side-hero {
     height: 320px;
     border-bottom: 1px solid var(--primary-color);
-  }
-  #content-cta .right-side-content-cta .top-desc,
-  #content-cta .right-side-content-cta .bottom-desc {
-    height: auto;
-    padding: 30px 20px;
-  }
-  #content-cta .right-side-content-cta h2 {
-    font-size: 32px;
   }
 
   #marquee {
@@ -368,13 +359,26 @@ footer .bottom-footer .copyright p {
   }
 
   #card-wrapper {
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr;
     height: auto;
+    margin: 0 auto;
   }
   #card-wrapper .card {
     border-right: none;
     border-bottom: 1px solid var(--primary-color);
+  }
+  #card-wrapper .card:last-child {
+    border-bottom: none;
+  }
+  #card-wrapper .card .package {
+    width: 200px;
+  }
+
+  #rencent-reviews .riviews-wrapper {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   footer .top-footer {
