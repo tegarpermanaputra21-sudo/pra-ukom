@@ -39,7 +39,6 @@ nav .middle-side-nav a {
   font-size: 30px;
 }
 
-/* --- Layout Sections --- */
 #hero,
 #content-cta {
   display: flex;
@@ -204,6 +203,7 @@ nav .middle-side-nav a {
   gap: 10px;
 }
 #rencent-reviews .riviews-wrapper .review {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -219,6 +219,7 @@ footer {
   flex-direction: column;
   background-color: var(--background-color);
   width: 100%;
+  border-top: 1px solid var(--primary-color);
 }
 footer .top-footer {
   display: flex;
