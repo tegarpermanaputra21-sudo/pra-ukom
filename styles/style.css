@@ -315,20 +315,90 @@ nav .middle-side-nav a {
   line-height: 1.5;
   margin-bottom: 30px;
 }
-
 #map-section {
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 500px; /* Tinggi kontainer peta */
+  border-top: 1px solid var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
   overflow: hidden;
 }
 
-#map-section img {
+/* Mengatur iframe peta dan memberi efek hitam-putih ala Kōffie */
+#map-section .map-iframe {
   width: 100%;
   height: 100%;
-  max-height: 500px;
-  object-fit: cover;
-  display: block;
+  filter: grayscale(100%) contrast(1.1) opacity(0.85); /* Menyesuaikan estetika monokrom */
+  transition: filter 0.3s ease;
+}
+
+/* Saat peta di-hover, warna aslinya sedikit muncul kembali */
+#map-section .map-iframe:hover {
+  filter: grayscale(40%) contrast(1.05);
+}
+
+/* Kartu Informasi Lokasi (Melayang di Atas Peta) */
+#map-section .map-info-card {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  background-color: var(
+    --background-color
+  ); /* Menggunakan warna palet #faf9f4 */
+  color: var(--primary-color); /* Warna teks hitam #000000 */
+  border: 1px solid var(--primary-color);
+  padding: 35px 30px;
+  max-width: 340px;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+#map-section .map-info-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#map-section .map-info-card .store-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#map-section .map-info-card .store-hours p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+#map-section .map-info-card .store-hours {
+  margin-bottom: 25px;
+}
+
+/* Tombol GET DIRECTIONS disesuaikan dengan tema utama */
+#map-section .map-info-card .btn-directions {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-color); /* Warna hitam #000000 */
+  color: var(--background-color); /* Teks krim #faf9f4 */
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+#map-section .map-info-card .btn-directions:hover {
+  background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 footer {
@@ -535,6 +605,28 @@ footer .bottom-footer .copyright p {
 
   #explore-section .explore-wrapper .explore-item {
     flex: 1 1 calc(100% - 10px);
+  }
+
+  #map-section {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse; /* Kartu berpindah ke atas atau bawah peta di HP */
+  }
+
+  #map-section .map-iframe {
+    height: 350px;
+  }
+
+  #map-section .map-info-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    padding: 30px 20px;
+    box-shadow: none;
   }
 
   footer .top-footer {
