@@ -534,7 +534,7 @@ footer .bottom-footer .copyright p {
   }
 
   #explore-section .explore-wrapper .explore-item {
-    flex: 1 1 calc(50% - 10px);
+    flex: 1 1 calc(100% - 10px);
   }
 
   footer .top-footer {
