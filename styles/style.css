@@ -33,19 +33,47 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 0 40px;
   border-bottom: 1px solid var(--primary-color);
+  background-color: var(--background-color);
 }
-
-nav .left-side-nav,
-nav .right-side-nav {
+nav .left-nav {
   display: flex;
-  gap: 40px;
+  align-items: center;
+  gap: 35px;
 }
-
-nav .middle-side-nav a {
-  font-family: "Rubik Spray Paint", sans-serif;
-  font-size: 30px;
+nav .left-nav .logo {
+  font-family: "Rubik Spray Paint", cursive, sans-serif;
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+nav .left-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+nav .left-nav .nav-links a {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary-color);
+  transition: opacity 0.2s ease;
+}
+nav .left-nav .nav-links a:hover {
+  opacity: 0.6;
+}
+nav .right-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+nav .right-nav a {
+  font-size: 18px;
+  color: var(--primary-color);
+  transition: opacity 0.2s ease;
+}
+nav .right-nav a:hover {
+  opacity: 0.6;
 }
 
 #hero,
@@ -53,7 +81,6 @@ nav .middle-side-nav a {
   display: flex;
   height: 552px;
 }
-
 #hero .left-side-hero {
   width: 50%;
   padding: 40px;
@@ -63,38 +90,32 @@ nav .middle-side-nav a {
   flex-direction: column;
   justify-content: space-between;
 }
-
 #hero .left-side-hero p {
   font-size: 14px;
   width: 60%;
   line-height: 1.5;
 }
-
 #hero .left-side-hero .btn {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
-
 #hero .left-side-hero .bottom-desc {
   display: flex;
   align-items: flex-end;
   height: auto;
   margin-top: auto;
 }
-
 #hero .left-side-hero .bottom-desc h1 {
   font-size: 42px;
   line-height: 1.2;
   font-weight: 500;
   text-transform: uppercase;
 }
-
 #hero .right-side-hero {
   width: 50%;
   border-bottom: 1px solid var(--primary-color);
 }
-
 #hero .right-side-hero img,
 #content-cta .left-side-content-cta img {
   width: 100%;
@@ -102,7 +123,6 @@ nav .middle-side-nav a {
   object-fit: cover;
   object-position: center;
 }
-
 .btn a {
   font-size: 13px;
   padding: 12px 24px;
@@ -112,7 +132,6 @@ nav .middle-side-nav a {
   text-transform: capitalize;
   transition: all 0.3s ease;
 }
-
 .btn a:hover {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -126,7 +145,6 @@ nav .middle-side-nav a {
   display: flex;
   align-items: center;
 }
-
 #marquee .marquee-content {
   display: flex;
   width: 100%;
@@ -134,14 +152,12 @@ nav .middle-side-nav a {
   align-items: center;
   gap: 20px;
 }
-
 #marquee .marquee-content span {
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.5px;
   white-space: nowrap;
 }
-
 #marquee .marquee-content .separator {
   display: inline-block;
   width: 35px;
@@ -152,7 +168,6 @@ nav .middle-side-nav a {
 .products-section h2 {
   padding: 20px 40px;
 }
-
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -160,7 +175,6 @@ nav .middle-side-nav a {
   border: 1px solid var(--primary-color);
   margin-bottom: 40px;
 }
-
 .card-wrapper .card {
   display: flex;
   flex-direction: column;
@@ -171,15 +185,12 @@ nav .middle-side-nav a {
   text-align: center;
   transition: all 0.3s ease;
 }
-
 .card-wrapper .card:last-child {
   border-right: none;
 }
-
 .card-wrapper .card:hover {
   background-color: var(--hover-card-bg);
 }
-
 .card-wrapper .card .card-image {
   flex-grow: 1;
   display: flex;
@@ -187,7 +198,6 @@ nav .middle-side-nav a {
   justify-content: center;
   overflow: hidden;
 }
-
 .card-wrapper .card .card-image img {
   max-width: 80%;
   width: 100%;
@@ -195,22 +205,18 @@ nav .middle-side-nav a {
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-
 .card-wrapper .card:hover .card-image img {
   transform: scale(1.1);
 }
-
 .card-wrapper .card .card-info {
   margin-top: 15px;
 }
-
 .card-wrapper .card .card-info h3 {
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
   margin-bottom: 5px;
 }
-
 .card-wrapper .card .card-info p {
   font-size: 14px;
   color: var(--text-muted);
@@ -224,17 +230,14 @@ nav .middle-side-nav a {
   margin: 60px 0;
   padding: 20px;
 }
-
 #recent-reviews h2 {
   margin-bottom: 40px;
   font-weight: 600;
 }
-
 #recent-reviews .reviews-wrapper {
   display: flex;
   gap: 10px;
 }
-
 #recent-reviews .reviews-wrapper .review {
   background-color: #ffffff;
   display: flex;
@@ -243,20 +246,16 @@ nav .middle-side-nav a {
   padding: 40px 20px;
   border: 1px solid var(--primary-color);
 }
-
 #recent-reviews .reviews-wrapper .review .rating i {
   color: var(--primary-color);
 }
-
 #recent-reviews .reviews-wrapper .review .desc-comment {
   margin-bottom: 10px;
 }
-
 #explore-section {
   width: 100%;
   padding: 60px 40px;
 }
-
 #explore-section .section-title {
   font-size: 32px;
   font-weight: 600;
@@ -264,26 +263,22 @@ nav .middle-side-nav a {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-
 #explore-section .explore-wrapper {
   display: flex;
   gap: 20px;
   width: 100%;
 }
-
 #explore-section .explore-wrapper .explore-item {
   flex: 1;
   aspect-ratio: 1 / 1;
   overflow: hidden;
 }
-
 #explore-section .explore-wrapper .explore-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
 }
-
 #explore-section .explore-wrapper .explore-item:hover img {
   transform: scale(1.05);
 }
@@ -299,7 +294,6 @@ nav .middle-side-nav a {
   border-bottom: 1px solid var(--primary-color);
   background-color: var(--background-color);
 }
-
 #content-cta h2 {
   font-size: 32px;
   font-weight: 600;
@@ -307,7 +301,6 @@ nav .middle-side-nav a {
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-
 #content-cta p {
   font-size: 14px;
   color: var(--primary-color);
@@ -315,6 +308,7 @@ nav .middle-side-nav a {
   line-height: 1.5;
   margin-bottom: 30px;
 }
+
 #map-section {
   position: relative;
   width: 100%;
@@ -323,29 +317,21 @@ nav .middle-side-nav a {
   border-bottom: 1px solid var(--primary-color);
   overflow: hidden;
 }
-
-/* Mengatur iframe peta dan memberi efek hitam-putih ala Kōffie */
 #map-section .map-iframe {
   width: 100%;
   height: 100%;
-  filter: grayscale(100%) contrast(1.1) opacity(0.85); /* Menyesuaikan estetika monokrom */
+  filter: grayscale(100%) contrast(1.1) opacity(0.85);
   transition: filter 0.3s ease;
 }
-
-/* Saat peta di-hover, warna aslinya sedikit muncul kembali */
 #map-section .map-iframe:hover {
   filter: grayscale(40%) contrast(1.05);
 }
-
-/* Kartu Informasi Lokasi (Melayang di Atas Peta) */
 #map-section .map-info-card {
   position: absolute;
   top: 50px;
   left: 60px;
-  background-color: var(
-    --background-color
-  ); /* Menggunakan warna palet #faf9f4 */
-  color: var(--primary-color); /* Warna teks hitam #000000 */
+  background-color: var(--background-color);
+  color: var(--primary-color);
   border: 1px solid var(--primary-color);
   padding: 35px 30px;
   max-width: 340px;
@@ -353,7 +339,6 @@ nav .middle-side-nav a {
   z-index: 10;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
 #map-section .map-info-card h2 {
   font-size: 24px;
   font-weight: 700;
@@ -361,31 +346,26 @@ nav .middle-side-nav a {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
 #map-section .map-info-card .store-address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
-
 #map-section .map-info-card .store-hours p {
   font-size: 14px;
   line-height: 1.5;
   color: #333333;
 }
-
 #map-section .map-info-card .store-hours {
   margin-bottom: 25px;
 }
-
-/* Tombol GET DIRECTIONS disesuaikan dengan tema utama */
 #map-section .map-info-card .btn-directions {
   display: inline-block;
   width: 100%;
   text-align: center;
-  background-color: var(--primary-color); /* Warna hitam #000000 */
-  color: var(--background-color); /* Teks krim #faf9f4 */
+  background-color: var(--primary-color);
+  color: var(--background-color);
   padding: 12px 20px;
   font-size: 13px;
   font-weight: 600;
@@ -395,7 +375,6 @@ nav .middle-side-nav a {
   border: 1px solid var(--primary-color);
   transition: all 0.3s ease;
 }
-
 #map-section .map-info-card .btn-directions:hover {
   background-color: var(--background-color);
   color: var(--primary-color);
@@ -407,18 +386,15 @@ footer {
   background-color: var(--background-color);
   width: 100%;
 }
-
 footer .top-footer {
   display: flex;
   justify-content: space-between;
 }
-
 footer .footer-col {
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
 }
-
 footer .top-footer h3 {
   font-size: 20px;
   font-weight: 600;
@@ -426,24 +402,20 @@ footer .top-footer h3 {
   margin-bottom: 25px;
   text-transform: uppercase;
 }
-
 footer .top-footer .nav-footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
 footer .top-footer .nav-footer a {
   font-size: 14px;
   color: var(--nav-text-muted);
   text-transform: uppercase;
   transition: color 0.2s ease;
 }
-
 footer .top-footer .nav-footer a:hover {
   color: var(--primary-color);
 }
-
 footer .top-footer .right-side-top-footer .input-user {
   display: flex;
   align-items: flex-end;
@@ -452,7 +424,6 @@ footer .top-footer .right-side-top-footer .input-user {
   width: 100%;
   max-width: 450px;
 }
-
 footer .top-footer .right-side-top-footer .input-user input {
   flex-grow: 1;
   border: none;
@@ -464,12 +435,10 @@ footer .top-footer .right-side-top-footer .input-user input {
   color: var(--primary-color);
   transition: border-color 0.3s ease;
 }
-
 footer .top-footer .right-side-top-footer .input-user input:focus {
   outline: none;
   border-bottom: 1px solid var(--primary-color);
 }
-
 footer .top-footer .right-side-top-footer .btn-signup {
   font-size: 13px;
   padding: 10px 24px;
@@ -479,30 +448,25 @@ footer .top-footer .right-side-top-footer .btn-signup {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 footer .top-footer .right-side-top-footer .btn-signup:hover {
   background-color: var(--primary-color);
   color: var(--background-color);
 }
-
 footer .bottom-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
 }
-
 footer .bottom-footer .social-icons {
   display: flex;
   gap: 25px;
 }
-
 footer .bottom-footer .social-icons a {
   color: var(--primary-color);
   font-size: 16px;
   transition: transform 0.2s ease;
 }
-
 footer .bottom-footer .copyright p {
   font-size: 14px;
   color: var(--primary-color);
@@ -513,52 +477,52 @@ footer .bottom-footer .copyright p {
   nav {
     height: auto;
     flex-direction: column;
-    gap: 15px;
     padding: 20px 15px;
-  }
-
-  nav .left-side-nav,
-  nav .right-side-nav {
     gap: 15px;
+  }
+  nav .left-nav {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  nav .left-nav .logo {
+    margin-right: 0;
+  }
+  nav .left-nav .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  nav .right-nav {
     justify-content: center;
     width: 100%;
-    font-size: 14px;
-  }
-
-  nav .middle-side-nav a {
-    font-size: 26px;
   }
 
   #hero {
     flex-direction: column;
     height: auto;
   }
-
   #hero .left-side-hero,
   #hero .right-side-hero {
     width: 100%;
     border-right: none;
   }
-
   #hero .left-side-hero {
     padding: 30px 20px;
     border-bottom: 1px solid var(--primary-color);
   }
-
   #hero .left-side-hero p {
     width: 100%;
     margin-bottom: 30px;
   }
-
   #hero .left-side-hero .btn {
     justify-content: flex-start;
     margin-bottom: 40px;
   }
-
   #hero .left-side-hero .bottom-desc h1 {
     font-size: 32px;
   }
-
   #hero .right-side-hero {
     height: 320px;
     border-bottom: 1px solid var(--primary-color);
@@ -575,16 +539,13 @@ footer .bottom-footer .copyright p {
     height: auto;
     margin: 0 auto 40px auto;
   }
-
   .card-wrapper .card {
     border-right: none;
     border-bottom: 1px solid var(--primary-color);
   }
-
   .card-wrapper .card:last-child {
     border-bottom: none;
   }
-
   .card-wrapper .card .package {
     width: 200px;
   }
@@ -597,12 +558,10 @@ footer .bottom-footer .copyright p {
   #explore-section {
     padding: 40px 20px;
   }
-
   #explore-section .explore-wrapper {
     flex-wrap: wrap;
     gap: 10px;
   }
-
   #explore-section .explore-wrapper .explore-item {
     flex: 1 1 calc(100% - 10px);
   }
@@ -610,13 +569,11 @@ footer .bottom-footer .copyright p {
   #map-section {
     height: auto;
     display: flex;
-    flex-direction: column-reverse; /* Kartu berpindah ke atas atau bawah peta di HP */
+    flex-direction: column-reverse;
   }
-
   #map-section .map-iframe {
     height: 350px;
   }
-
   #map-section .map-info-card {
     position: relative;
     top: 0;
