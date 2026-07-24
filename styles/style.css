@@ -541,7 +541,6 @@ footer .bottom-footer {
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
-  border-top: 1px solid var(--border-color);
 }
 
 footer .bottom-footer .social-icons {
@@ -746,11 +745,5 @@ footer .bottom-footer .copyright p {
 
   footer .footer-col.right-side-top-footer {
     width: 100%;
-  }
-
-  footer .bottom-footer {
-    flex-direction: column;
-    gap: 15px;
-    padding: 20px;
   }
 }
