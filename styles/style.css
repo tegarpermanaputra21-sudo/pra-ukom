@@ -584,8 +584,7 @@ footer .bottom-footer .copyright p {
   }
 
   nav .right-nav {
-    justify-content: center;
-    width: 100%;
+    display: none;
   }
 
   #hero {
