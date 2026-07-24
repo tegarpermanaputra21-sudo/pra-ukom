@@ -604,7 +604,7 @@ footer .bottom-footer .copyright p {
   }
 
   #hero {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
   }
 
@@ -616,7 +616,11 @@ footer .bottom-footer .copyright p {
 
   #hero .left-side-hero {
     padding: 30px 20px;
+    flex-direction: column-reverse;
     border-bottom: 1px solid var(--border-color);
+  }
+  #hero .left-side-hero h1 {
+    margin-bottom: 20px;
   }
 
   #hero .left-side-hero p {
