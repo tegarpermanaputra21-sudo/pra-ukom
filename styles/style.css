@@ -308,8 +308,14 @@ nav .right-nav {
   padding: 30px 25px;
   border: 1px solid var(--border-color);
   min-height: 200px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-
+#recent-reviews .reviews-wrapper .review:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 #recent-reviews .reviews-wrapper .review .rating {
   margin-bottom: 12px;
 }
