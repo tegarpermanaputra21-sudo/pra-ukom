@@ -826,6 +826,11 @@ footer .bottom-footer .copyright p {
   .slider {
     height: 420px;
   }
+  .slider-nav a {
+    width: 2rem;
+    height: 4px;
+    border-radius: 10px;
+  }
 
   .hero-content {
     left: 5%;
