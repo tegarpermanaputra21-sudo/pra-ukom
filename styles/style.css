@@ -108,7 +108,6 @@ nav .right-nav {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 0.25);
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -179,6 +178,7 @@ nav .right-nav {
 .slider-nav a {
   width: 120px;
   height: 6px;
+  border-radius: 14px;
   background-color: #ffffff;
   opacity: 0.4;
   transition: opacity ease 250ms;
@@ -699,25 +699,10 @@ footer .bottom-footer .copyright p {
 @media screen and (max-width: 768px) {
   nav {
     height: auto;
-    flex-direction: column;
-    padding: 20px 15px;
+    padding: 15px;
     gap: 15px;
-  }
-  nav .left-nav {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-    text-align: center;
-  }
-  nav .left-nav .logo {
-    margin-right: 0;
   }
   nav .left-nav .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-  nav .right-nav {
     display: none;
   }
 
