@@ -197,7 +197,7 @@ nav .right-nav {
   display: flex;
   column-gap: 1rem;
   position: absolute;
-  bottom: 1.25rem;
+  bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -211,26 +211,6 @@ nav .right-nav {
 }
 .slider-nav a:hover {
   opacity: 0.7;
-}
-
-.slider-nav {
-  display: flex;
-  column-gap: 1rem;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-}
-.slider-nav button {
-  width: 2rem;
-  height: 0.25rem;
-  background-color: #ffffff;
-  opacity: 0.4;
-  transition: opacity ease 250ms;
-}
-.slider-nav button:hover {
-  opacity: 1;
 }
 
 #marquee {
