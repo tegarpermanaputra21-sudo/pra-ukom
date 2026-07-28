@@ -155,7 +155,6 @@ nav .right-nav {
   padding: 12px 28px;
   font-size: 14px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
   transition: all 0.3s ease;
   text-decoration: none;
   background-color: transparent;
@@ -703,8 +702,14 @@ footer .bottom-footer .copyright p {
     padding: 15px;
     gap: 15px;
   }
+  nav .left-nav .logo {
+    font-size: 22px;
+  }
   nav .left-nav .nav-links {
     display: none;
+  }
+  nav .right-nav a {
+    font-size: 12px;
   }
 
   .slider {
